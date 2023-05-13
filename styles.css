@@ -28,7 +28,6 @@ font-family: 'Ubuntu', sans-serif; */
 body {
   width: 100%;
   font-family: "Nunito Sans", sans-serif;
-  /* overflow-y: hidden; */
 }
 
 .about {
@@ -64,7 +63,7 @@ body {
 }
 
 .aboutTextHeader h2 {
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 30px;
   font-family: "Merienda", cursive;
 }
@@ -157,9 +156,11 @@ body {
   line-height: 1.5;
 }
 
-/* media queries for screen size less than 1000px */
+/* media queries */
 
-@media (max-width: 1000px) {
+/* media queries for screen size less than 992px */
+
+@media (max-width: 992px) {
   .ourFacilityBody {
     padding: 0;
   }
@@ -168,26 +169,25 @@ body {
     width: 40%;
   }
 }
-/* media queries for screen size less than 700px */
+/* media queries for screen size less than 768px */
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
+  .about {
+    padding: 0px;
+  }
+
   .aboutTextHeader h2 {
     font-size: 30px;
-    text-align: center;
   }
 
-  .aboutTextBody .aboutTextButton {
-    width: 60%;
-  }
-}
-
-/* media queries for screen size less than 650px */
-
-@media (max-width: 650px) {
   .aboutContent {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .aboutTextBody .aboutTextButton {
+    width: 60%;
   }
 
   .aboutLogo {
@@ -196,9 +196,9 @@ body {
   }
 
   .aboutText {
-    width: 80%;
+    width: 90%;
     margin-top: 20px;
-    align-items: center;
+    align-items: start;
     justify-content: center;
   }
 
@@ -206,7 +206,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
   }
 
   .aboutTextBody p {
@@ -218,18 +217,13 @@ body {
   }
 }
 
-/* media queries for screen size less than 450px */
+/* media queries for screen size less than 576px */
 
-@media (max-width: 450px) {
-  .aboutLogo {
-    width: 90%;
-    height: 200px;
-  }
-
+@media (max-width: 576px) {
   .ourFacilityHeader h2 {
     font-size: 30px;
   }
   .facilityFeatures {
-    width: 80%;
+    width: 60%;
   }
 }
